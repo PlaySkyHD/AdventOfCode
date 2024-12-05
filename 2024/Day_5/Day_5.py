@@ -32,7 +32,7 @@ def part_one(file_path):
 
     middle_page_number_sum = sum([correct_order[len(correct_order) // 2] for correct_order in correct_orders])
     print(middle_page_number_sum)
-part_one(r"2024\Day_Five\input.txt")
+part_one(r"2024\Day_5\input.txt")
 
 # Part Two
 def part_two(file_path):
@@ -82,4 +82,4 @@ def part_two(file_path):
 
     middle_page_number_sum = sum([correct_order[len(correct_order) // 2] for correct_order in in_correct_orders])
     print(middle_page_number_sum)
-part_two(r"2024\Day_Five\input.txt")
+part_two(r"2024\Day_5\input.txt")

@@ -19,7 +19,7 @@ def part_one(file_path):
     
     print(ans)
 
-part_one(r"2024\Day_One\input.txt")
+part_one(r"2024\Day_1\input.txt")
 
 # Part Two
 def part_two(file_path):
@@ -38,4 +38,4 @@ def part_two(file_path):
         ans += element * y.count(element)
     print(ans)
 
-part_two(r"2024\Day_One\input.txt")
+part_two(r"2024\Day_1\input.txt")

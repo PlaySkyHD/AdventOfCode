@@ -10,7 +10,7 @@ def part_one(file_path):
         data = instruction.split(",")
         ans += int(data[0]) * int(data[1])
     print(len(instructions))
-part_one(r"2024\Day_Three\input.txt")
+part_one(r"2024\Day_3\input.txt")
 
 # Part Two
 def part_two(file_path):
@@ -66,7 +66,7 @@ def part_two(file_path):
             instructions.append(f"mul({int(numbers[0])},{int(numbers[1])})")
             ans += int(numbers[0]) * int(numbers[1])
     print(ans)
-part_two(r"2024\Day_Three\example.txt")
+part_two(r"2024\Day_3\example.txt")
 
 
 def part_two_re(file_path):
@@ -102,6 +102,6 @@ def part_two_re(file_path):
             ans += int(data[0]) * int(data[1])
         i += end_index - start_index + 1
     print(ans)
-part_two_re(r"2024\Day_Three\example.txt")
+part_two_re(r"2024\Day_3\example.txt")
 
 

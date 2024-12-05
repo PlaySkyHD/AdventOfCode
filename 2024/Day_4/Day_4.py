@@ -36,7 +36,7 @@ def part_one(file_path):
                     count += 1
     
     print(count)
-part_one(r"2024\Day_Four\example.txt")
+part_one(r"2024\Day_4\example.txt")
 
 # Part Two
 def part_two(file_path):
@@ -68,4 +68,4 @@ def part_two(file_path):
     
     print(count // 2)
 
-part_two(r"2024\Day_Four\input.txt")
+part_two(r"2024\Day_4\input.txt")

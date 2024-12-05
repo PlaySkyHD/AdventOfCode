@@ -20,7 +20,7 @@ def part_one(file_path):
                 break
     print(f"Safe: {len(reports) - unsafe}")
     print(f"Unsafe: {unsafe}")
-part_one(r"2024\Day_Two\input.txt")
+part_one(r"2024\Day_2\input.txt")
 
 # Part Two
 def part_two(file_path):
@@ -61,4 +61,4 @@ def part_two(file_path):
     print(f"Safe: {len(reports) - unsafe}")
     print(f"Unsafe: {unsafe}")
 
-part_two(r"2024\Day_Two\input.txt")
+part_two(r"2024\Day_2\input.txt")
