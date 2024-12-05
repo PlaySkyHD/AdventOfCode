@@ -6,12 +6,11 @@ def part_one(file_path):
         file_content = file.read()
     founded_rules = re.findall(r"\d+\|\d+", file_content)
     rules = set()
-    
     for rule in founded_rules:
         raw_data = rule.split("|")
         rules.add((int(raw_data[0]), int(raw_data[1])))
-    orders = file_content.split("\n\n")[1]
-    orders = [list(map(int, order.split(","))) for order in orders.split("\n")]
+    
+    orders = [list(map(int, order.split(","))) for order in file_content.split("\n\n")[1].split("\n")]
     
     correct_orders = []
     for order in orders:
@@ -30,6 +29,7 @@ def part_one(file_path):
                 break
         else:
             correct_orders.append(order)
+
     middle_page_number_sum = sum([correct_order[len(correct_order) // 2] for correct_order in correct_orders])
     print(middle_page_number_sum)
 part_one(r"2024\Day_Five\input.txt")
@@ -61,12 +61,11 @@ def part_two(file_path):
         file_content = file.read()
     founded_rules = re.findall(r"\d+\|\d+", file_content)
     rules = set()
-    
     for rule in founded_rules:
         raw_data = rule.split("|")
         rules.add((int(raw_data[0]), int(raw_data[1])))
-    orders = file_content.split("\n\n")[1]
-    orders = [list(map(int, order.split(","))) for order in orders.split("\n")]
+    
+    orders = [list(map(int, order.split(","))) for order in file_content.split("\n\n")[1].split("\n")]
     
     in_correct_orders = []
     for order in orders:
@@ -80,6 +79,7 @@ def part_two(file_path):
             index_two = order.index(failed_rule[1])
             order[index_one], order[index_two] = order[index_two], order[index_one]
             valid, failed_rule = check_order(order)
+
     middle_page_number_sum = sum([correct_order[len(correct_order) // 2] for correct_order in in_correct_orders])
     print(middle_page_number_sum)
 part_two(r"2024\Day_Five\input.txt")
