@@ -1,5 +1,6 @@
-# Part One
 from itertools import product
+
+# Part One
 def part_one(file_path):
     def solve_function(numbers: list, operators: list) -> int:
         if len(numbers) == 1:
