@@ -1,5 +1,3 @@
-
-
 # Part One
 from itertools import product
 def part_one(file_path):
