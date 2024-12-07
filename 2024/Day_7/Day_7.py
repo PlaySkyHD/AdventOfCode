@@ -23,8 +23,8 @@ def part_one(file_path):
         result = int(line_data[0])
         numbers = list(map(int, line_data[1].split(" ")))
         operators = list(product(available_operators, repeat=len(numbers) - 1))
-        for operator in operators:
-            if solve_function(numbers[:], list(operator)) == result:
+        for operator_pattern in operators:
+            if solve_function(numbers[:], list(operator_pattern)) == result:
                 ans += result
                 break
     print(ans)
@@ -58,8 +58,8 @@ def part_two(file_path):
         result = int(line_data[0])
         numbers = list(map(int, line_data[1].split(" ")))
         operators = list(product(available_operators, repeat=len(numbers) - 1))
-        for operator in operators:
-            if solve_function(numbers[:], list(operator)) == result:
+        for operator_pattern in operators:
+            if solve_function(numbers[:], list(operator_pattern)) == result:
                  ans += result
                  break
         print(round(index / len(lines) * 100, 2),"%")
