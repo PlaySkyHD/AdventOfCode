@@ -133,7 +133,7 @@ def part_two(file_path):
             if check_loop():
                 possible_locations.add((new_x, new_y))
             grid[new_y][new_x] = "."
-        print(round(index / len(path) * 100, 2))
+        print(round(index / len(path) * 100, 2), "%")
 
     print(len(possible_locations))
 part_two(r"2024\Day_6\input.txt")
